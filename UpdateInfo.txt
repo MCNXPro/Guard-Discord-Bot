@@ -1,0 +1,25 @@
+Guard V.1.0.1 - Update:
+ - Bugfixes in AC
+  + Numerierung der neu erstellten ACs
+  + Löschen der nicht mehr genutzten ACs
+ - Übernahme der Permissions, des StammACs, beim erstellen von ACs
+  + AC-Creator bekommt die Permission den neu erstellten AC zu bearbeiten (Name, Bitrate, Userlimit)
+ - Command `say` wurde hinzugefügt:
+  + `.say (Require permission: CMD)`
+     `- p [@user] ["text"]`
+      Sends the mentioned user a private message in your name.
+     `- pa [@user] ["text"]`
+      Sends the mentioned user a private message in the name of the Server.
+     `- ["text"]`
+      The Bot sends this as his message.
+ (Überlegt: - Private Danksagung an Server Booster, wenn sie den Server boosten)
+
+Guard V.1.0.2 - Update:
+ - Bugfixes in AC
+  + Numerierung der neu erstellten ACs korrigiert
+  + Abstürzen verhindert
+ - manuellen Reset der AC-Numerierung eingeführt
+  + `.AC/ac (Require permission: CMD_LV2)`
+     `- reset [AutoChannel ID]`\nResets the counter the AC.`
+ - Permission-System überarbeitet:
+  + CMD wurde aufgeteilt in CMD_LV1 & CMD_LV2 um die Permission-Vergabe zu erleichtern
